@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regions_name">
+        <item>Alsace</item>
+        <item>Beaujolais</item>
+        <item>Jura</item>
+        <item>Champagne</item>
+        <item>Savoie</item>
+        <item>Languedoc-Roussillon</item>
+        <item>Bordelais</item>
+        <item>Vallée du Rhone</item>
+        <item>Provence</item>
+        <item>Val de Loire</item>
+        <item>Sud-Ouest</item>
+        <item>Corse</item>
+        <item>Bourgogne</item>
+    </string-array>
+
+    <string-array name="regions_url">
+        <item>http://technoresto.org/vdf/alsace/index.html</item>
+        <item>http://technoresto.org/vdf/beaujolais/index.html</item>
+        <item>http://technoresto.org/vdf/jura/index.html</item>
+        <item>http://technoresto.org/vdf/champagne/index.html</item>
+        <item>http://technoresto.org/vdf/savoie/index.html</item>
+        <item>http://technoresto.org/vdf/languedoc/index.html</item>
+        <item>http://technoresto.org/vdf/bordelais/index.html</item>
+        <item>http://technoresto.org/vdf/cotes_du_rhone/index.html</item>
+        <item>http://technoresto.org/vdf/provence/index.html</item>
+        <item>http://technoresto.org/vdf/val_de_loire/index.html</item>
+        <item>http://technoresto.org/vdf/sud-ouest/index.html</item>
+        <item>http://technoresto.org/vdf/corse/index.html</item>
+        <item>http://technoresto.org/vdf/bourgogne/index.html</item>
+    </string-array>
+
+    <string name="default_url">http://technoresto.org/vdf/index.html</string>
+</resources>
