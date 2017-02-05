@@ -10,6 +10,8 @@ import com.example.guillaume.tp3_mmm.model.Region;
 
 public class MainActivity extends AppCompatActivity implements RegionListFragment.OnListFragmentInteractionListener {
 
+    private Region currentRegion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +25,12 @@ public class MainActivity extends AppCompatActivity implements RegionListFragmen
             RegionListFragment regionListFragment = new RegionListFragment();
             getSupportFragmentManager().beginTransaction().add(R.id.frame_region_list, regionListFragment).commit();
         }
-
     }
 
     @Override
     public void onListFragmentInteraction(Region item) {
         if (findViewById(R.id.frame_region_detail) != null) {
+            currentRegion = item;
             DetailFragment detailFragment = DetailFragment.newInstance(item);
             getSupportFragmentManager().beginTransaction().replace(R.id.frame_region_detail, detailFragment).addToBackStack(null).commit();
         } else {
