@@ -64,7 +64,6 @@ public class GeocodeJSONRequest extends AsyncTask<String, String, GeocodeRespons
         cmdUpdateLocation = cmd;
     }
 
-
     public double getLat() {
         return lat;
     }

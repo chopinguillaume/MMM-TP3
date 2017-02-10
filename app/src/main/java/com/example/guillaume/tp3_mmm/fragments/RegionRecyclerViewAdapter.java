@@ -35,8 +35,8 @@ public class RegionRecyclerViewAdapter extends RecyclerView.Adapter<RegionRecycl
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        holder.mItem = regions.get(position);
-        holder.textName.setText(regions.get(position).getName());
+        holder.region = regions.get(position);
+        holder.mText.setText(regions.get(position).getName());
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +44,7 @@ public class RegionRecyclerViewAdapter extends RecyclerView.Adapter<RegionRecycl
                 if (null != mListener) {
                     // Notify the active callbacks interface (the activity, if the
                     // fragment is attached to one) that an item has been selected.
-                    mListener.onListFragmentInteraction(holder.mItem);
+                    mListener.onListFragmentInteraction(holder.region);
                 }
             }
         });
@@ -57,13 +57,13 @@ public class RegionRecyclerViewAdapter extends RecyclerView.Adapter<RegionRecycl
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         public final View mView;
-        public final TextView textName;
-        public Region mItem;
+        public final TextView mText;
+        public Region region;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            textName = (TextView) view.findViewById(R.id.region_name);
+            mText = (TextView) view.findViewById(R.id.region_name);
         }
 
         @Override

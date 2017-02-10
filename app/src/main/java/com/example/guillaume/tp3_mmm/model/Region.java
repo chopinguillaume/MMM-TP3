@@ -12,7 +12,7 @@ public class Region implements Parcelable {
         this.name = name;
     }
 
-    protected Region(Parcel in) {
+    private Region(Parcel in) {
         name = in.readString();
         url = in.readString();
     }
@@ -43,7 +43,6 @@ public class Region implements Parcelable {
         dest.writeString(name);
         dest.writeString(url);
     }
-
 
     public static final Creator<Region> CREATOR = new Creator<Region>() {
         @Override
